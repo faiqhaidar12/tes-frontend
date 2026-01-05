@@ -101,8 +101,8 @@
     >
       <div class="text-center">
         <div class="daftar-diskon-illustration mb-6 d-inline-flex align-center justify-center">
-         <v-img
-            src="src/assets/no-discount.png"
+          <v-img
+            :src="noDiscountImg"
             alt="tidak ada diskon"
             width="120"
             height="80"
@@ -296,6 +296,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import axios from 'axios'
+import noDiscountImg from '../assets/no-discount.png'
 
 const router = useRouter()
 const DEFAULT_API_URL = 'https://crudcrud.com/api/1f45b619db6b405fb1e2d23ed65d56a9/diskon'
